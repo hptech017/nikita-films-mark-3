@@ -1,0 +1,159 @@
+.choose-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 100px;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .choose-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  
+    
+  }
+  
+  .choose-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .choose-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .choose-content h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  .choose-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .choose-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .choose-icon {
+    background-color: #be9c6c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .choose-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .choose-text p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 0;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    .choose-container {
+      padding: 50px 40px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .choose-content {
+      max-width: 90%;
+      text-align: center;
+    }
+  
+    .choose-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .choose-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .choose-container {
+      padding: 40px 20px;
+    }
+  
+    .choose-image img {
+      width: 100%;
+    }
+  
+    .choose-content h2 {
+      font-size: 24px;
+    }
+  
+    .choose-item {
+      gap: 10px;
+    }
+  
+    .choose-icon {
+      width: 45px;
+      height: 45px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .choose-container {
+      padding: 30px 15px;
+    }
+  
+    .choose-content h2 {
+      font-size: 22px;
+    }
+  
+    .choose-content h3 {
+      font-size: 12px;
+    }
+  
+    .choose-item {
+      gap: 8px;
+    }
+  
+    .choose-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    .choose-text h4 {
+      font-size: 16px;
+    }
+  
+    .choose-text p {
+      font-size: 13px;
+    }
+  }
+  

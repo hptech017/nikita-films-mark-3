@@ -1,0 +1,89 @@
+.callus-container {
+    position: relative;
+    width: 90%; /* Adjust width for better responsiveness */
+    max-width: 1200px; /* Increased max-width for better large screen support */
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 16/7; /* Maintain aspect ratio for all screens */
+  }
+  
+  .callus-container::before {
+    content: "";
+    background: url("../assets/callUsNow.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+  }
+  
+  .callus-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 5vw; /* Scales padding dynamically */
+  }
+  
+  .callus-overlay h2 {
+    font-size: clamp(18px, 3vw, 36px); /* Dynamic font size */
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .callus-button {
+    padding: 12px 24px;
+    font-size: clamp(14px, 1.5vw, 18px); /* Button text scales */
+    font-weight: bold;
+    color: #333;
+    background-color: #be9c6c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .callus-button:hover {
+    background-color: #a7895d;
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    .callus-container {
+      width: 95%;
+    }
+  
+    .callus-overlay {
+      padding: 4vw;
+    }
+  }
+  
+  /* Small Screens (Mobile) */
+  @media (max-width: 768px) {
+    .callus-container {
+      aspect-ratio: 16/10; /* Taller ratio for better mobile view */
+    }
+  
+    .callus-overlay h2 {
+      max-width: 90%;
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media (max-width: 480px) {
+    .callus-overlay {
+      padding: 30px;
+    }
+  
+    .callus-button {
+      padding: 10px 20px;
+    }
+  }
+  

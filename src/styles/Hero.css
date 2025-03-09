@@ -1,0 +1,196 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Ensure only one slide is visible */
+.hero .owl-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Image */
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Fullscreen Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-btn {
+  padding: 14px 40px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Custom Navigation Buttons */
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsiveness */
+
+/* For 1024px screens */
+@media screen and (max-width: 1024px) {
+  .hero {
+      height: 75vh;
+  }
+
+  .hero-overlay h1 {
+      font-size: 2.2rem;
+  }
+
+  .hero-overlay h3 {
+      font-size: 1.2rem;
+  }
+
+  .hero-btn {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+  }
+}
+
+/* For 768px screens */
+@media screen and (max-width: 768px) {
+  .hero {
+      height: 65vh;
+  }
+
+  .hero-overlay h1 {
+      font-size: 1.8rem;
+  }
+
+  .hero-overlay h3 {
+      font-size: 1rem;
+  }
+
+  .hero-btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+  }
+}
+
+/* For 430px screens (max-width: 550px) */
+@media screen and (max-width: 550px) {
+  .hero {
+      height: 55vh;
+  }
+
+  .hero-overlay {
+      padding: 20px;
+  }
+
+  .hero-overlay h1 {
+      font-size: 1.5rem;
+  }
+
+  .hero-overlay h3 {
+      font-size: 0.9rem;
+  }
+
+  .hero-btn {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"] {
+      font-size: 1.5rem;
+      padding: 8px 12px;
+  }
+}
+
+/* For 360px screens (max-width: 375px) */
+@media screen and (max-width: 375px) {
+  .hero {
+      height: 50vh;
+  }
+
+  .hero-overlay {
+      padding: 15px;
+  }
+
+  .hero-overlay h1 {
+      font-size: 1.3rem;
+  }
+
+  .hero-overlay h3 {
+      font-size: 0.8rem;
+  }
+
+  .hero-btn {
+      padding: 6px 18px;
+      font-size: 0.8rem;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"] {
+      font-size: 1.2rem;
+      padding: 6px 10px;
+  }
+}

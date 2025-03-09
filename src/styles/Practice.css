@@ -1,0 +1,30 @@
+.practice {
+    padding: 50px;
+    background: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .practice h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .practice-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .practice-item {
+    background: #444;
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+  }
+  
+  .practice-item h3 {
+    color: #c5a46d;
+    margin-bottom: 10px;
+  }
+  
