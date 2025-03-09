@@ -24,7 +24,7 @@
     align-items: center;
     gap: 12px;
     width: 30%;
-    min-width: 200px;
+    min-width: 300px;
     color: #d4af7a;
     transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

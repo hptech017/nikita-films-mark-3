@@ -13,7 +13,10 @@ const Footer = () => {
           <i className="fa fa-map-marker-alt icon"></i>
           <div>
             <h5>Our Office</h5>
-            <p>123 Street, New York, USA</p>
+            <p>M/S Nikita Films
+              19 ,Sudarshan Apartment ,Proffessors Colony Bhopal (M.P)
+              462002
+            </p>
           </div>
         </div>
         <div className="footer-box">
