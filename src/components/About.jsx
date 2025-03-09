@@ -18,9 +18,7 @@ const About = () => {
           <h4>LEARN ABOUT US</h4>
           <h2>We Provide Reliable And Effective Shooting & Editing Services</h2>
           <p>
-            Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor
-            lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo
-            sed sed diam. Ea et erat ut sed diam sea ipsum est dolor.
+          We have a huge experience of Producing fictional / non-fictional programs and delivering quality product on time.
           </p>
           <button className="about-btn">Learn More</button>
         </div>
