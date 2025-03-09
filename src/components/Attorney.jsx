@@ -1,20 +1,20 @@
 import React from "react";
 import "../styles/Attorney.css";
 import image1 from "../assets/director.jpeg";
-import image2 from "../assets/attorney-2.jpg";
-import image3 from "../assets/attorney-3.jpg";
-import image4 from "../assets/attorney-4.jpg";
-import image5 from "../assets/attorney-5.jpg";
-import image6 from "../assets/attorney-6.jpg";
+import image2 from "../assets/director.jpeg";
+import image3 from "../assets/director.jpeg";
+import image4 from "../assets/director.jpeg";
+import image5 from "../assets/director.jpeg";
+import image6 from "../assets/director.jpeg";
 
 const Attorney = () => {
   const filmmakers = [
     { name: "Awadhesh Pandey", role: "Cinematographer", image: image1 },
-    { name: "Director Name 2", role: "Screenwriter", image: image2 },
-    { name: "Director Name 3", role: "Producer", image: image3 },
-    { name: "Director Name 4", role: "Film Editor", image: image4 },
-    { name: "Director Name 5", role: "Sound Designer", image: image5 },
-    { name: "Director Name 6", role: "VFX Artist", image: image6 },
+    { name: "Awadhesh Pandey", role: "Screenwriter", image: image2 },
+    { name: "Awadhesh Pandey", role: "Producer", image: image3 },
+    { name: "Awadhesh Pandey", role: "Film Editor", image: image4 },
+    { name: "Awadhesh Pandey", role: "Sound Designer", image: image5 },
+    { name: "Awadhesh Pandey", role: "VFX Artist", image: image6 },
   ];
 
   return (
